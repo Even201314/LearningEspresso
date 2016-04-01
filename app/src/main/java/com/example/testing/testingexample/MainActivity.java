@@ -17,6 +17,7 @@ public class MainActivity extends Activity {
     public void sayHello(View v) {
         TextView textView = (TextView) findViewById(R.id.textView);
         EditText editText = (EditText) findViewById(R.id.editText);
-        textView.setText("Hello," + editText.getText().toString() + "!");
+        String content = "Hello," + editText.getText().toString() + "!";
+        textView.setText(content);
     }
 }
